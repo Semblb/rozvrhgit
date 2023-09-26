@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete</title>
+    <style>
+        #button3{
+         width: 150px;
+         color:#64ffff;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         margin-left:710px;
+         margin-top:10px;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+        }
+        input[type=number] {
+         text-align: left;
+         width: 99%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+         border: solid;
+         border-color: #05221e;
+         border-width: 2px;
+         background-color: #23e2e2;
+        }
+        input[type=submit] {
+         width: 150px;
+         color:#23e2e2;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         margin-left:10px;
+         margin-top:10px;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+        }
+        label{
+         text-align: center;
+         font-size: 25px;
+         font-weight: bold;
+         color: #05221e;
+         padding: 0px;
+         margin: 10px;
+        }
+        div{
+          padding: 10px;
+          margin: 5px;
+          margin-left: 30px;
+          margin-right: 30px;
+          border:solid;
+          border-color: #116459;
+          border-width: 15px;
+          background-color:#14a0a0;
+        }
+    </style>
+</head>
+<body style="background-color: #64ffff;">
+
+    <h1 style="text-align: center;
+                font-size: 100px;
+                font-weight: bold;
+                color: #05221e;
+                padding: 0px;
+                margin: 10px;">
+          Delete
+      </h1>
+
+    <a href="/home"><button id="button3">- Menu -</button></a>
+    
+    <div>
+    <form action="/delete" method="POST">
+        <label for="idrozvrh">ID:</label><br>
+        <input type="number" id="idrozvrh" name="idrozvrh" value=""><br>
+        <input type="submit" value="- Submit -" class="inputsumbit">
+    </form>
+    </div>
+
+</body>
+</html>

@@ -5,46 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin</title>
-
+    <title>Read</title>
+    <style>
+        #button{
+        width: 150px;
+        color:#23e2e2;
+        background-color: #05221e;
+        padding: 5px;
+        margin-left: 710px;
+        border-color: #05221e;
+        border-width: 10px;
+        text-align: center;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 25px;
+        cursor: pointer;}
+        div{
+          padding: 10px;
+          margin: 5px;
+          margin-left: 548px;
+          margin-right: 548px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          border:solid;
+          border-color: #0e5249;
+          border-width: 15px;
+          background-color:#14a0a0;
+        }
+    </style>
 </head>
 
-<body>
-    <table style="background-color: #116b5f;">
-        <td style="padding: 8px;
-                  text-align: left;">
+<body style="background-color: #64ffff;">
+    <h1 style="text-align: center;
+              font-size: 120px;
+              color: #05221e;
+              font-weight: bold;
+              margin: 2px;">
+    Read
+    </h1>
+
+    <a href="/home"><button id = "button">- Menu -</button></a>
+
+<div>
+    <table style="background-color: #0e5249;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border: solid;
+                  border-width: 5px;
+                  border-color: #0e5249;">
+    <td style="margin: 5px;
+              ">
             <% for(var i=0; i < result.length; i++) { %>
-                <tr style="background-color: #10ebeb;">
-                    <td>
+            <tr style="background-color: #23e2e2;
+                      text-align: center">
+                    <td style="color:#05221e;
+                              font-weight: bold;
+                              padding: 4px;
+                              font-size: 25px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].id %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 4px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].subject %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 4px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].day %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 6px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].hour %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 4px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].teacher %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 4px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].classroom %>
                     </td>
-                    <td>
-                    <td>
+                    <td style="color:#0e5249;
+                              font-weight: bold;
+                              padding: 4px;
+                              border: solid;
+                              border-width: 1px;
+                              border-color: #0e5249;">
                         <%= result[i].building %>
                     </td>
-                </tr>
+            </tr>
             <% } %>
     </table>
+
+</div>
 </body>
 
 </html>

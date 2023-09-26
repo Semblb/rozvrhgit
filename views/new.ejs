@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <style>
+      #button2{
+         width: 150px;
+         color:#64ffff;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         margin-left:710px;
+         margin-top:10px;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+        }
+        #buttton{
+         margin-left: 6px;
+         color:#64ffff;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+         width: 200px;
+        }
+        input[type=text] {
+         text-align: left;
+         width: 99%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+         border: solid;
+         border-color: #05221e;
+         border-width: 2px;
+         background-color: #23e2e2;
+        }
+        label{
+         text-align: center;
+         font-size: 25px;
+         font-weight: bold;
+         color: #05221e;
+         padding: 0px;
+         margin: 10px;
+        }
+        div{
+          padding: 10px;
+          margin: 5px;
+          margin-left: 30px;
+          margin-right: 30px;
+          border:solid;
+          border-color: #0e5249;
+          border-width: 15px;
+          background-color:#14a0a0;
+        }
+    </style>
+</head>
+<body style="background-color: #64ffff;">
+  <h1 style="text-align: center;
+              font-size: 100px;
+              font-weight: bold;
+              color: #05221e;
+              padding: 0px;
+              margin: 10px;">
+        Create
+    </h1>
+
+  <a href="/home"><button id="button2">- Menu -</button></a>
+
+   <div id="div">
+
+     <form action="/new" method="POST">
+       <label for="sub">Subject:</label>
+       <input type="text" id="sub" name="sub" required>
+
+       <label for="sub">Day:</label>
+       <input type="text" id="day" name="day" required>
+
+       <label for="sub">Hour:</label>
+       <input type="text" id="hou" name="hou" required>
+
+       <label for="sub">Teacher:</label>
+       <input type="text" id="tea" name="tea" required>
+
+       <label for="sub">Classroom:</label>
+       <input type="text" id="cla" name="cla" required>
+
+       <label for="sub">Building:</label>
+       <input type="text" id="bui" name="bui" required>
+  
+       <button type="submit", id ="buttton">- Create -</button>
+     </form>
+
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+
+    <style>
+        label {
+         text-align: center;
+         font-size: 25px;
+         font-weight: bold;
+         color: #05221e;
+         padding: 0px;
+         margin: 10px;
+        }
+
+        input[type="text"] {
+            text-align: left;
+         width: 99%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+         border: solid;
+         border-color: #05221e;
+         border-width: 2px;
+         background-color: #23e2e2;
+        }
+        input[type="number"] {
+            text-align: left;
+         width: 99%;
+         padding: 12px 20px;
+         margin: 8px;
+         box-sizing: border-box;
+         border: solid;
+         border-color: #05221e;
+         border-width: 2px;
+         background-color: #23e2e2;
+        }
+
+        /* Style the submit button */
+        input[type="submit"] {
+            width: 150px;
+         color:#64ffff;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         margin-left: 10px;
+         margin-top:10px;
+         margin-bottom: 10px;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+        }
+
+         #button7{
+         width: 150px;
+         color:#64ffff;  
+         background-color: #05221e;       
+         padding: 5px;
+         border-color: #05221e;
+         border-width: 10px;
+         text-align: center;
+         margin-left: 700px;
+         margin-top:10px;
+         margin-bottom: 10px;
+         font-weight: bold;
+         display: inline-block;
+         font-size: 25px;
+         cursor: pointer;
+        }
+        div{
+          padding: 10px;
+          margin: 5px;
+          margin-left: 400px;
+          margin-right: 400px;
+          border:solid;
+          border-color: #0e5249;
+          border-width: 15px;
+          background-color: #14a0a0;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: #64ffff;">
+
+<h1 style="text-align: center;
+            font-size: 100px;
+            font-weight: bold;
+            color: #05221e;
+            padding: 0px;
+            margin: 10px;">
+      Update
+  </h1>
+
+    <a href="/home"><button id="button7">Menu</button></a>
+
+    <div>
+
+        <form action="/update" method="post">
+            <label for="id">ID:</label>
+            <input type="number" id="id" name="id" value="" required><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" value="" required><br>
+
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day" value="" required><br>
+
+            <label for="hour">Hour:</label>
+            <input type="text" id="hour" name="hour" value="" required><br>
+
+            <label for="teacher">Teacher:</label>
+            <input type="text" id="teacher" name="teacher" value="" required ><br>
+
+            <label for="classroom">Classroom:</label>
+            <input type="text" id="classroom" name="classroom" value="" required><br>
+
+            <label for="building">Building:</label>
+            <input type="text" id="building" name="building" value="" required><br>
+
+            <input type="submit" value="- Submit -">
+        </form>
+
+    </div>
+</body>
+
+</html>
